@@ -246,11 +246,13 @@ main {
     color: #005cdd;
     font-size: 2em;
     margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
 }
 #services .service-card span{
     color: #005cdd;
-    font-size: 1em;
-    margin-right: 1em;
+    font-size: 1.1em;
+    margin-right: 0.5em;
 }
 #services .service-card ul{
     margin-left: 2em;
