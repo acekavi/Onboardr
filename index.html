@@ -52,18 +52,22 @@
 				<img src="static/img/logo-text.png" alt="Onboardr Logo" class="h-10" />
 				<ul class="flex space-x-6">
 					<li>
-						<a href="#home" class="text-gray-700 hover:text-blue-500">Home</a>
+						<a href="" class="text-gray-700 hover:text-[#005cdd]">Home</a>
 					</li>
 					<li>
-						<a href="#services" class="text-gray-700 hover:text-blue-500"
+						<a href="#services" class="text-gray-700 hover:text-[#005cdd]"
 							>Services</a
 						>
 					</li>
 					<li>
-						<a href="#about" class="text-gray-700 hover:text-blue-500">About</a>
+						<a href="#about" class="text-gray-700 hover:text-[#005cdd]"
+							>About</a
+						>
 					</li>
 					<li>
-						<a href="#contact" class="text-gray-700 hover:text-blue-500"
+						<a
+							href="/contactus/index.html"
+							class="text-gray-700 hover:text-[#005cdd]"
 							>Contact</a
 						>
 					</li>
@@ -87,6 +91,31 @@
 					</div>
 				</section>
 			</article>
+
+			<article
+				id="why-onboardr"
+				class="min-h-screen py-16 px-4 bg-gray-50 w-full"
+			>
+				<div class="max-w-5xl mx-auto text-center">
+					<h2 class="text-4xl font-bold mb-8 text-gray-800">Why Onboardr?</h2>
+					<p class="text-gray-600 leading-relaxed mb-8">
+						Onboardr revolutionizes the onboarding process with tailored
+						resources, dynamic training, and robust integrations—helping new
+						hires hit the ground running.
+					</p>
+					<div class="bg-white rounded-lg p-6 shadow-md inline-block">
+						<span class="material-symbols-outlined text-4xl text-[#005cdd] mb-4"
+							>thumb_up</span
+						>
+						<h3 class="text-xl font-semibold mb-2">Empower Your Team</h3>
+						<p class="text-gray-700 text-sm">
+							Reduce administrative overhead, maximize employee productivity,
+							and foster a sense of belonging from day one.
+						</p>
+					</div>
+				</div>
+			</article>
+
 			<article
 				id="services"
 				class="min-h-screen flex flex-col justify-center items-center bg-gradient-to-r from-green-400 to-blue-500 px-4 py-16 text-white"
@@ -104,7 +133,9 @@
 					<div
 						class="bg-white text-gray-800 rounded-lg p-6 shadow-lg flex flex-col items-center"
 					>
-						<span class="material-symbols-outlined text-5xl mb-4 text-blue-500">
+						<span
+							class="material-symbols-outlined text-5xl mb-4 text-[#005cdd]"
+						>
 							groups
 						</span>
 						<h3 class="text-xl font-semibold mb-2">
@@ -117,7 +148,9 @@
 					<div
 						class="bg-white text-gray-800 rounded-lg p-6 shadow-lg flex flex-col items-center"
 					>
-						<span class="material-symbols-outlined text-5xl mb-4 text-blue-500">
+						<span
+							class="material-symbols-outlined text-5xl mb-4 text-[#005cdd]"
+						>
 							school
 						</span>
 						<h3 class="text-xl font-semibold mb-2">Training Modules</h3>
@@ -128,7 +161,9 @@
 					<div
 						class="bg-white text-gray-800 rounded-lg p-6 shadow-lg flex flex-col items-center"
 					>
-						<span class="material-symbols-outlined text-5xl mb-4 text-blue-500">
+						<span
+							class="material-symbols-outlined text-5xl mb-4 text-[#005cdd]"
+						>
 							settings
 						</span>
 						<h3 class="text-xl font-semibold mb-2">Integration Tools</h3>
@@ -139,7 +174,9 @@
 					<div
 						class="bg-white text-gray-800 rounded-lg p-6 shadow-lg flex flex-col items-center"
 					>
-						<span class="material-symbols-outlined text-5xl mb-4 text-blue-500">
+						<span
+							class="material-symbols-outlined text-5xl mb-4 text-[#005cdd]"
+						>
 							quiz
 						</span>
 						<h3 class="text-xl font-semibold mb-2">
@@ -151,7 +188,7 @@
 					</div>
 				</div>
 			</article>
-			<article id="showcase" class="min-h-screen px-4 py-16 bg-white">
+			<article id="showcase" class="min-h-screen px-4 py-16 bg-white w-full">
 				<div class="w-full mb-16">
 					<h2 class="text-4xl font-bold mb-8 text-center text-gray-800">
 						Testimonials
@@ -159,7 +196,7 @@
 					<div class="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
 						<div class="bg-gray-100 p-6 rounded shadow">
 							<span
-								class="material-symbols-outlined text-5xl mb-4 text-blue-500 block text-center"
+								class="material-symbols-outlined text-5xl mb-4 text-[#005cdd] block text-center"
 							>
 								person
 							</span>
@@ -172,7 +209,7 @@
 						</div>
 						<div class="bg-gray-100 p-6 rounded shadow">
 							<span
-								class="material-symbols-outlined text-5xl mb-4 text-blue-500 block text-center"
+								class="material-symbols-outlined text-5xl mb-4 text-[#005cdd] block text-center"
 							>
 								person
 							</span>
@@ -186,7 +223,7 @@
 						</div>
 						<div class="bg-gray-100 p-6 rounded shadow">
 							<span
-								class="material-symbols-outlined text-5xl mb-4 text-blue-500 block text-center"
+								class="material-symbols-outlined text-5xl mb-4 text-[#005cdd] block text-center"
 							>
 								person
 							</span>
@@ -205,24 +242,44 @@
 					</h2>
 					<div class="grid gap-8 grid-cols-2 md:grid-cols-4 items-center">
 						<div
-							class="bg-white p-4 rounded shadow flex items-center justify-center"
+							class="bg-white p-4 rounded shadow flex items-center justify-center flex-col"
 						>
-							<img src="static/img/partner1.png" alt="Partner 1" class="h-12" />
+							<img
+								src=" https://placehold.co/600x600"
+								alt="Partner 1"
+								class="h-12"
+							/>
+							<p>Partner Name</p>
 						</div>
 						<div
-							class="bg-white p-4 rounded shadow flex items-center justify-center"
+							class="bg-white p-4 rounded shadow flex items-center justify-center flex-col"
 						>
-							<img src="static/img/partner2.png" alt="Partner 2" class="h-12" />
+							<img
+								src=" https://placehold.co/600x600"
+								alt="Partner 2"
+								class="h-12"
+							/>
+							<p>Partner Name</p>
 						</div>
 						<div
-							class="bg-white p-4 rounded shadow flex items-center justify-center"
+							class="bg-white p-4 rounded shadow flex items-center justify-center flex-col"
 						>
-							<img src="static/img/partner3.png" alt="Partner 3" class="h-12" />
+							<img
+								src=" https://placehold.co/600x600"
+								alt="Partner 3"
+								class="h-12"
+							/>
+							<p>Partner Name</p>
 						</div>
 						<div
-							class="bg-white p-4 rounded shadow flex items-center justify-center"
+							class="bg-white p-4 rounded shadow flex items-center justify-center flex-col"
 						>
-							<img src="static/img/partner4.png" alt="Partner 4" class="h-12" />
+							<img
+								src=" https://placehold.co/600x600"
+								alt="Partner 4"
+								class="h-12"
+							/>
+							<p>Partner Name</p>
 						</div>
 					</div>
 				</div>
@@ -236,7 +293,7 @@
 					</p>
 					<a
 						href="/blog"
-						class="inline-flex items-center bg-blue-500 text-white font-semibold py-3 px-6 rounded-full hover:bg-blue-600 transition-colors"
+						class="inline-flex items-center bg-[#005cdd] text-white font-semibold py-3 px-6 rounded-full hover:bg-[#005cdd]/90 transition-colors"
 					>
 						<span class="material-symbols-outlined mr-2">article</span>
 						Visit our Blog
@@ -244,8 +301,32 @@
 				</div>
 			</article>
 		</main>
-		<footer class="bg-gray-800 text-white py-6">
-			<p class="text-center">&copy; 2025 Onboardr. All rights reserved.</p>
+		<footer class="bg-[#005cdd] text-white py-8">
+			<div class="container mx-auto px-6">
+				<div
+					class="flex flex-col md:flex-row md:justify-between md:items-center"
+				>
+					<div class="mb-4 md:mb-0">
+						<p class="text-sm">&copy; 2025 Onboardr. All rights reserved.</p>
+					</div>
+					<ul class="flex space-x-4 text-sm">
+						<li>
+							<a href="/blog" class="hover:text-gray-300">Blog</a>
+						</li>
+						<li>
+							<a href="/contactus/index.html" class="hover:text-gray-300"
+								>Contact Us</a
+							>
+						</li>
+						<li>
+							<a href="#about" class="hover:text-gray-300">About</a>
+						</li>
+						<li>
+							<a href="#privacy" class="hover:text-gray-300">Privacy Policy</a>
+						</li>
+					</ul>
+				</div>
+			</div>
 		</footer>
 	</body>
 </html>
