@@ -1,114 +1,18 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-body {
-    font-family: 'Montserrat', Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
-}
-header,
-nav,
-footer {
-    background-color: #005cdd;
-    color: #fff;
-    padding: 1em;
-}
-header h1,
-footer p {
-    margin: 0;
+.font-mogra {
+    font-family: "Mogra", serif;
 }
 nav {
     position: sticky;
     top: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.5em 1em;
-    background-color: #005cdd;
     z-index: 1000;
-}
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    gap: 1em;
-    margin: 0;
-}
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    padding: 0.5em 1em;
-    border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
-    font-weight: 700;
-}
-nav ul li a:hover {
-    background-color: #004bb5;
-}
-nav .logo {
-    width: 150px;
-    filter: invert();
-}
-main {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 2em;
-    margin: 2rem auto;
-    line-height: 1.6;
-    font-size: 1.125rem;
 }
 .hero {
     position: relative;
     width: 100%;
     height: 100vh;
     background: url('static/img/hero-bg.jpg') no-repeat center center/cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    text-align: center;
 }
-#home{
-    background: url('static/img/coworkers.jpg') no-repeat center center/cover;
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    color: #fff;
-    text-align: center;
-}
-#home .card{
-    background-color: #005cdd;
-    padding: 5em;
-    border-radius: 0  5em 0 5em;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    margin: 1em;
-    width: 50%;
-    display: flex;
-    align-items: start;
-    flex-direction: column;
-}
-#home .card p{
-    text-align: left;
-}
-#home .card h2{
-    text-align: left;
-    color: #f4f4f4;
-}
-#home .card h1{
-    line-height: 1em;
-    font-size: 2em;
-    text-align: left;
-    margin-bottom: 1em;
-}
-.hero::before {
+.hero::after {
     content: '';
     position: absolute;
     top: 0;
@@ -116,153 +20,13 @@ main {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.8);
-    z-index: 1;
 }
-.hero-content {
+#home{
+    background: url('static/img/coworkers.jpg') no-repeat center center/cover;
     position: relative;
-    z-index: 2;
-    text-align: center;
-}
-.hero-content img {
-    width: 50em;
-    margin-bottom: -3em;
-    margin-left: -2em;
-    filter: invert();
-}
-.hero-content p {
-    font-size: 1.35em;
-    font-weight: 500;
-}
-.hero h1 {
-    font-size: 3em;
-    margin-bottom: 0.5em;
-}
-.hero p {
-    font-size: 1.2em;
-    margin-bottom: 1em;
-}
-.hero a {
-    display: inline-block;
-    color: #fff;
-    background-color: #005cdd;
-    text-decoration: none;
-    padding: 0.5em 1em;
-    border: none;
-    margin-right: 0.5em;
-    transition: background-color 0.3s, color 0.3s;
-}
-.hero a:hover {
-    background-color: #f4f4f4;
-    color: #005cdd;
-}
-.hero-links {
-    display: flex;
-    justify-content: center;
-    margin-top: 5em;
-    gap: 1em;
-}
-.hero-links a {
-    display: inline-block;
-    color: #005cdd;
-    background-color: #fff;
-    text-decoration: none;
-    padding: 0.5em 1em;
-    font-size: larger;
-    font-weight: 500;
-    border: none;
-    margin-right: 0.5em;
-    transition: background-color 0.3s, color 0.3s;
-}
-.hero-links a:hover {
-    background-color: #005cdd;
-    color: #fff;
-}
-#business-model,
-#value-provided {
-    margin: 1em;
-    padding: 2em;
-    background-color: #fff;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-}
-#business-model h2,
-#value-provided h2 {
-    color: #005cdd;
-}
-#value-provided ul {
-    list-style: disc;
-    padding-left: 1.5em;
-}
-#value-provided ul li {
-    margin-bottom: 0.5em;
-}
-#contact {
-    margin: 1em;
-    padding: 2em;
-    background-color: #fff;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    .client-counter h3 {
-        font-size: 3em;
-    }
-}
-#services{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 90vh;
-}
-#services h2{
-    position: absolute;
-    top: 5em;
-    left: 1em;
-}
-#services .client-counter {
-    text-align: center;
-    margin-bottom: 2em;
-}
-#services .services-cards {
-    display: flex;
-    align-items: center;
-    gap: 2em;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-#services .service-card {
-    background-color: #fff;
-    color: #333;
-    padding: 1em;
-    border-radius: 8px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    width: 50rem;
-    height: 25rem;
-    padding: 2rem;
-}
-#services .service-card h3{
-    color: #005cdd;
-    font-size: 2em;
-    margin-bottom: 1rem;
-    display: flex;
-    align-items: center;
-}
-#services .service-card span{
-    color: #005cdd;
-    font-size: 1.1em;
-    margin-right: 0.5em;
-}
-#services .service-card ul{
-    margin-left: 2em;
-}
-.client-counter h3{
-    font-size: 3em;
-    color: #005cdd;
-}
-.client-counter{
-    margin-top: 10rem;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
 }
 @media (max-width: 768px) {
     nav ul {
@@ -271,5 +35,29 @@ main {
     }
     nav .logo {
         width: 100px;
+    }
+}
+.scroll-down-arrow {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    animation: bounce 2s infinite;
+}
+
+.scroll-down-arrow .material-symbols-outlined {
+    font-size: 48px;
+    color: white;
+    opacity: 0.7;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(10px);
+    }
+    60% {
+        transform: translateY(5px);
     }
 }

@@ -1,96 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Onboardr - Streamlining Onboarding for Modern Workplaces</title>
+		<link rel="stylesheet" href="styles.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Mogra&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+		/>
+		<script src="https://cdn.tailwindcss.com"></script>
+	</head>
 
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Onboardr - Streamlining Onboarding for Modern Workplaces</title>
-	<link rel="stylesheet" href="styles.css" />
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-		rel="stylesheet">
-	<link rel="stylesheet"
-		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-</head>
-
-<body>
-	<section class="hero">
-		<div class="hero-content">
-			<img src="static/img/logo-text.png" alt="Onboardr Logo" />
-			<p>Streamlining Onboarding for Modern Workplaces</p>
-			<div class="hero-links">
-				<a href="#about">About Us</a>
-				<a href="#services">Our Services</a>
-				<a href="#blog">Blog</a>
-			</div>
-		</div>
-	</section>
-	<nav>
-		<img src="static/img/logo-text.png" alt="Onboardr Logo" class="logo" />
-		<ul>
-			<li><a href="#home">Home</a></li>
-			<li><a href="#services">Services</a></li>
-			<li><a href="#about">About</a></li>
-			<li><a href="#contact">Contact</a></li>
-		</ul>
-	</nav>
-	<main class="main-container">
-		<article>
-			<section id="home">
-				<div class="card">
-					<h2>
-						Welcome to Onboardr.
-					</h2>
-					<h1>
+	<body class="font-sans bg-gray-100 text-gray-900">
+		<section
+			class="hero flex flex-col justify-center items-center text-white relative bg-gradient-to-r from-blue-500 to-purple-600 h-screen"
+		>
+			<div
+				class="hero-content z-10 flex flex-col justify-center items-center gap-12 text-center"
+			>
+				<div>
+					<img
+						src="static/img/logo-text.png"
+						alt="Onboardr Logo"
+						class="invert -mb-10"
+					/>
+					<p class="text-2xl font-light">
 						Streamlining Onboarding for Modern Workplaces
-					</h1>
-					<p>
-						Onboardr is a digital onboarding service that provides tailored
-						resources, training modules, and integration tools to help companies
-						onboard new hires efficiently while reducing the managerial burden.
 					</p>
 				</div>
-			</section>
-			<section id="services">
-				<h2>
-					Our Services
-				</h2>
-				<div class="client-counter">
-					<p>We've helped numerous companies streamline their onboarding process.</p>
-					<h3>131+ Clients</h3>
-				</div>
-				<div class="services-cards">
-					<div class="service-card">
-						<h3>
-							<span class="material-symbols-outlined">
-								storefront
-							</span>Business Model
+				<p class="text-4xl md:text-5xl lg:text-6xl font-bold">
+					From startups to enterprises, 34,000+ businesses use Onboardr.
+				</p>
+			</div>
+			<div
+				class="scroll-down-arrow text-white absolute bottom-10 z-10 animate-bounce"
+			>
+				<span class="material-symbols-outlined text-4xl"
+					>keyboard_arrow_down</span
+				>
+			</div>
+		</section>
+		<nav class="bg-white shadow-md py-4">
+			<div class="container mx-auto flex justify-between items-center px-6">
+				<img src="static/img/logo-text.png" alt="Onboardr Logo" class="h-10" />
+				<ul class="flex space-x-6">
+					<li>
+						<a href="#home" class="text-gray-700 hover:text-blue-500">Home</a>
+					</li>
+					<li>
+						<a href="#services" class="text-gray-700 hover:text-blue-500"
+							>Services</a
+						>
+					</li>
+					<li>
+						<a href="#about" class="text-gray-700 hover:text-blue-500">About</a>
+					</li>
+					<li>
+						<a href="#contact" class="text-gray-700 hover:text-blue-500"
+							>Contact</a
+						>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<main class="mx-auto flex flex-col items-center gap-12 p-12">
+			<article id="home">
+				<section class="h-screen flex flex-col justify-center">
+					<div class="bg-white p-8 rounded-lg shadow-lg w-1/2 ms-16">
+						<h2 class="text-3xl font-semibold">Welcome to Onboardr.</h2>
+						<h1 class="text-4xl font-bold mb-6">
+							Streamlining Onboarding for Modern Workplaces
+						</h1>
+						<p class="text-lg leading-relaxed">
+							Onboardr is a digital onboarding service that provides tailored
+							resources, training modules, and integration tools to help
+							companies onboard new hires efficiently while reducing the
+							managerial burden.
+						</p>
+					</div>
+				</section>
+			</article>
+			<article
+				id="services"
+				class="min-h-screen flex flex-col justify-center items-center bg-gradient-to-r from-green-400 to-blue-500 px-4 py-16 text-white"
+			>
+				<h1 class="text-5xl md:text-6xl lg:text-7xl font-bold mb-12">
+					From Startups to Enterprises
+				</h1>
+				<p class="text-lg max-w-2xl mb-10 text-center">
+					We offer a range of services to help businesses of all sizes
+					efficiently onboard new hires.
+				</p>
+				<div
+					class="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 w-full px-16"
+				>
+					<div
+						class="bg-white text-gray-800 rounded-lg p-6 shadow-lg flex flex-col items-center"
+					>
+						<span class="material-symbols-outlined text-5xl mb-4 text-blue-500">
+							groups
+						</span>
+						<h3 class="text-xl font-semibold mb-2">
+							Customized Onboarding Plans
 						</h3>
-						<ul>
-								<li>We collect knowledge from experts and compile it for new hires to reduce managerial burden.</li>
-								<li>We save company time with a subscription-based model for businesses.</li>
-								<li>We plan to use AI tools for search and information presentation.</li>
-						</ul>
+						<p class="text-sm">
+							Create personalized onboarding experiences for new hires.
+						</p>
 					</div>
-					<div class="service-card">
-						<h3><span class="material-symbols-outlined">
-							search_insights
-						</span>Value Provided</h3>
-						<ul>
-							<li>Comprehensive database</li>
-							<li>Expert Access</li>
-							<li>Affordable Solutions for SMBs</li>
-							<li>Remote Work Adaptability</li>
-						</ul>
+					<div
+						class="bg-white text-gray-800 rounded-lg p-6 shadow-lg flex flex-col items-center"
+					>
+						<span class="material-symbols-outlined text-5xl mb-4 text-blue-500">
+							school
+						</span>
+						<h3 class="text-xl font-semibold mb-2">Training Modules</h3>
+						<p class="text-sm">
+							Provide interactive and comprehensive training sessions.
+						</p>
+					</div>
+					<div
+						class="bg-white text-gray-800 rounded-lg p-6 shadow-lg flex flex-col items-center"
+					>
+						<span class="material-symbols-outlined text-5xl mb-4 text-blue-500">
+							settings
+						</span>
+						<h3 class="text-xl font-semibold mb-2">Integration Tools</h3>
+						<p class="text-sm">
+							Seamlessly integrate with existing systems and workflows.
+						</p>
+					</div>
+					<div
+						class="bg-white text-gray-800 rounded-lg p-6 shadow-lg flex flex-col items-center"
+					>
+						<span class="material-symbols-outlined text-5xl mb-4 text-blue-500">
+							quiz
+						</span>
+						<h3 class="text-xl font-semibold mb-2">
+							Employee Feedback Surveys
+						</h3>
+						<p class="text-sm">
+							Gather insights from new hires to improve onboarding experiences.
+						</p>
 					</div>
 				</div>
-			</section>
-		</article>
-	</main>
-	<footer>
-		<p>&copy; 2025 Onboardr. All rights reserved.</p>
-	</footer>
-</body>
-
+			</article>
+			<article id="showcase" class="min-h-screen px-4 py-16 bg-white">
+				<div class="w-full mb-16">
+					<h2 class="text-4xl font-bold mb-8 text-center text-gray-800">
+						Testimonials
+					</h2>
+					<div class="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+						<div class="bg-gray-100 p-6 rounded shadow">
+							<span
+								class="material-symbols-outlined text-5xl mb-4 text-blue-500 block text-center"
+							>
+								person
+							</span>
+							<p class="text-gray-800 italic text-center">
+								"Onboardr simplified our entire onboarding process."
+							</p>
+							<div class="text-center mt-4 text-sm text-gray-600">
+								– Alex, CEO of StartupX
+							</div>
+						</div>
+						<div class="bg-gray-100 p-6 rounded shadow">
+							<span
+								class="material-symbols-outlined text-5xl mb-4 text-blue-500 block text-center"
+							>
+								person
+							</span>
+							<p class="text-gray-800 italic text-center">
+								"We saved countless hours with their customizable training
+								modules!"
+							</p>
+							<div class="text-center mt-4 text-sm text-gray-600">
+								– Maria, HR Lead at Innovatech
+							</div>
+						</div>
+						<div class="bg-gray-100 p-6 rounded shadow">
+							<span
+								class="material-symbols-outlined text-5xl mb-4 text-blue-500 block text-center"
+							>
+								person
+							</span>
+							<p class="text-gray-800 italic text-center">
+								"Integration tools made it seamless for our enterprise systems."
+							</p>
+							<div class="text-center mt-4 text-sm text-gray-600">
+								– John, CTO of MegaCorp
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="w-full mb-16">
+					<h2 class="text-4xl font-bold mb-8 text-center text-gray-800">
+						Our Partners
+					</h2>
+					<div class="grid gap-8 grid-cols-2 md:grid-cols-4 items-center">
+						<div
+							class="bg-white p-4 rounded shadow flex items-center justify-center"
+						>
+							<img src="static/img/partner1.png" alt="Partner 1" class="h-12" />
+						</div>
+						<div
+							class="bg-white p-4 rounded shadow flex items-center justify-center"
+						>
+							<img src="static/img/partner2.png" alt="Partner 2" class="h-12" />
+						</div>
+						<div
+							class="bg-white p-4 rounded shadow flex items-center justify-center"
+						>
+							<img src="static/img/partner3.png" alt="Partner 3" class="h-12" />
+						</div>
+						<div
+							class="bg-white p-4 rounded shadow flex items-center justify-center"
+						>
+							<img src="static/img/partner4.png" alt="Partner 4" class="h-12" />
+						</div>
+					</div>
+				</div>
+				<div class="w-full text-center">
+					<h2 class="text-4xl font-bold mb-4 text-gray-800">
+						Check Out Our Blog
+					</h2>
+					<p class="mb-8 text-gray-600">
+						Stay updated with the latest insights and best practices in
+						onboarding.
+					</p>
+					<a
+						href="/blog"
+						class="inline-flex items-center bg-blue-500 text-white font-semibold py-3 px-6 rounded-full hover:bg-blue-600 transition-colors"
+					>
+						<span class="material-symbols-outlined mr-2">article</span>
+						Visit our Blog
+					</a>
+				</div>
+			</article>
+		</main>
+		<footer class="bg-gray-800 text-white py-6">
+			<p class="text-center">&copy; 2025 Onboardr. All rights reserved.</p>
+		</footer>
+	</body>
 </html>
