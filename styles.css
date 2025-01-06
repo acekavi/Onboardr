@@ -257,6 +257,13 @@ main {
 #services .service-card ul{
     margin-left: 2em;
 }
+.client-counter h3{
+    font-size: 3em;
+    color: #005cdd;
+}
+.client-counter{
+    margin-top: 10rem;
+}
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;
