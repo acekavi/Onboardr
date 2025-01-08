@@ -16,6 +16,14 @@
 			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
 		/>
 		<script src="https://cdn.tailwindcss.com"></script>
+		<meta
+			name="description"
+			content="Streamlining Onboarding for Modern Workplaces with tailored resources, training modules, and integration tools."
+		/>
+		<meta
+			name="keywords"
+			content="onboarding, HR, new hires, training, integration"
+		/>
 	</head>
 
 	<body class="bg-gray-100 text-gray-900">
@@ -47,50 +55,74 @@
 				>
 			</div>
 		</section>
-		<nav class="bg-white shadow-md py-4">
+		<nav
+			class="bg-white shadow-md py-4"
+			role="navigation"
+			aria-label="Main navigation"
+		>
 			<div class="container mx-auto flex justify-between items-center px-6">
 				<img src="./static/img/logo.png" alt="Onboardr Logo" class="h-10" />
-				<ul class="flex space-x-6 font-bold">
+				<button
+					class="block md:hidden px-4 py-2 text-gray-700 hover:text-[#005cdd]"
+					aria-label="Toggle navigation"
+					onclick="document.getElementById('mobileMenu').classList.toggle('hidden')"
+				>
+					Menu
+				</button>
+				<ul id="mobileMenu" class="hidden md:flex space-x-6 font-bold">
 					<li>
-						<a href="./index.html" class="text-gray-700 hover:text-[#005cdd]"
-							>Home</a
+						<a
+							href="./index.html"
+							class="text-gray-700 hover:text-[#005cdd]"
+							aria-label="Go to Home page"
 						>
+							Home
+						</a>
 					</li>
 					<li>
 						<a
 							href="./services/index.html"
 							class="text-gray-700 hover:text-[#005cdd]"
-							>Services</a
+							aria-label="Our Services"
 						>
+							Services
+						</a>
 					</li>
 					<li>
 						<a
 							href="./blog/index.html"
 							class="text-gray-700 hover:text-[#005cdd]"
-							>Blog</a
+							aria-label="Visit Blog page"
 						>
+							Blog
+						</a>
 					</li>
 					<li>
 						<a
 							href="./contactus/index.html"
 							class="text-gray-700 hover:text-[#005cdd]"
-							>Contact</a
+							aria-label="Contact Us page"
 						>
+							Contact
+						</a>
 					</li>
 				</ul>
 			</div>
 		</nav>
-		<main class="mx-auto flex flex-col items-center gap-12 p-12">
+		<main
+			aria-label="Main content"
+			class="mx-auto flex flex-col items-center gap-12 p-12"
+		>
 			<article id="home">
 				<section class="h-screen flex flex-col justify-center">
 					<div class="bg-white p-8 rounded-lg shadow-lg w-1/2 ms-16">
-						<h2 class="text-3xl font-semibold text-[#3a8dfa]">
+						<h2 class="lg:text-3xl font-semibold text-[#3a8dfa]">
 							Welcome to Onboardr.
 						</h2>
-						<h1 class="text-4xl font-bold mb-6 text-[#005cdd]">
+						<h1 class="lg:text-4xl text-xs font-bold mb-6 text-[#005cdd]">
 							Streamlining Onboarding for Modern Workplaces
 						</h1>
-						<p class="text-lg leading-relaxed">
+						<p class="lg:text-lg text-xs leading-relaxed text-xs">
 							Onboardr is a digital onboarding service that provides tailored
 							resources, training modules, and integration tools to help
 							companies onboard new hires efficiently while reducing the
@@ -98,7 +130,7 @@
 						</p>
 						<a
 							href="./contactus/index.html"
-							class="inline-block mt-6 bg-[#005cdd] text-white py-3 px-6 rounded-full shadow hover:bg-[#005cdd]/90 cursor-pointer transition-colors"
+							class="inline-block mt-6 bg-[#005cdd] text-white py-3 px-6 rounded-full shadow hover:bg-[#005cdd]/90 cursor-pointer transition-colors text-sm lg:text-lg"
 						>
 							Contact Us
 						</a>
@@ -253,7 +285,7 @@
 				<div
 					class="w-full bg-gradient-to-br from-[#3a8dfa] to-[#005cdd] text-white py-24 rounded-lg"
 				>
-					<h2 class="text-7xl font-bold text-center mb-20">Our Partners</h2>
+					<h2 class="lg:text-7xl font-bold text-center mb-20">Our Partners</h2>
 					<div class="grid gap-8 grid-cols-2 md:grid-cols-4 items-center">
 						<div class="p-4 flex items-center justify-center flex-col">
 							<img

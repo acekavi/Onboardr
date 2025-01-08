@@ -45,6 +45,24 @@ nav {
         width: 100px;
     }
 }
+@media (max-width: 640px) {
+    h1, .text-4xl {
+        font-size: 1.75rem;
+    }
+    h2, .text-3xl {
+        font-size: 1.5rem;
+    }
+    .p-12 {
+        padding: 1rem;
+    }
+    .hero {
+        height: auto;
+        padding: 2rem 1rem;
+    }
+    .hero-content {
+        gap: 2rem;
+    }
+}
 .scroll-down-arrow {
     display: flex;
     justify-content: center;
@@ -69,3 +87,6 @@ nav {
         transform: translateY(5px);
     }
 }
+
+/* Add any necessary @media rules or responsive overrides here */
+/* e.g. @media (max-width: 600px) { ... } */
